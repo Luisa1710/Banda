@@ -1,0 +1,9 @@
+
+.footer1{
+display: flex;
+flex-direction: column;
+
+}
+.footer2{  
+    font-size: x-small;
+}

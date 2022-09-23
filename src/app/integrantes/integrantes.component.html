@@ -1,1 +1,24 @@
-<p>integrantes</p>
+<app-menu></app-menu>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 mt-5" *ngFor="let integrante of integrantesBanda">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src={{integrante.foto}} class="img-fluid rounded-start w-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{integrante.nombre}}</h5>
+                      <p class="card-text">Fecha de nacimiento: {{integrante.fechaNacimiento}}</p>
+                      <p class="card-text">Edad: {{integrante.edad}}</p>
+                      <p class="card-text">Fecha de fallecimiento: {{integrante.fechaFallecimiento}}</p>
+                      <p class="card-text">{{integrante.biografia}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
